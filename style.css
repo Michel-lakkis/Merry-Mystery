@@ -1,0 +1,95 @@
+body {
+    background-color: #8e1a1a;
+
+}
+.ccb {
+    border: 10px solid; /* Sets border thickness */
+    border-image: linear-gradient(45deg, #b82b2b 10%, white 10%, white 20%, #b82b2b 20%, #b82b2b 30%, white 30%, white 40%, #b82b2b 40%, #b82b2b 50%, white 50%, white 60%, #b82b2b 60%, #b82b2b 70%, white 70%, white 80%, #b82b2b 80%, #b82b2b 90%, white 90%) 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds shadowing */
+    border-radius: 10px;
+}
+.mainphoto {
+    position: absolute;
+    width: 96%;
+    height: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    z-index: 2;
+}
+.mainphoto img {
+    width: 100%;
+    height: auto;
+}
+.container {
+
+    display: flex;
+    height: 100vh;
+    padding-top: 126vh;
+}
+  
+  /* Left Section  */
+  .left-section {
+    text-align: center;
+    color: white;
+    width: 50%;
+    background-color: transparent;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow: auto;
+    z-index: 1;
+  }
+  
+  /* Right Section */
+  .right-section {
+    width: 45%;
+    margin-left: 55%;
+    padding: 20px;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  .left-section h1 {
+    padding-top: 24%;
+  }
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .container {
+      display: block;
+      padding-top: 50vh;
+    }
+    .left-section, .right-section {
+      width: 100%;
+      margin-left: 0;
+      height: auto;
+      position: relative;
+    }
+    .right-section {
+        margin-top: 40vh;
+        width: 94%;
+        margin-left: 0%;
+        margin-right: 3%;
+    }
+  }
+  .ccbb {
+    position: relative;
+    background-color: transparent;
+    color: #b82b2b;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: 6px solid;
+    border-image: linear-gradient(45deg, #b82b2b 10%, white 10%, white 20%, #b82b2b 20%, #b82b2b 30%, white 30%, white 40%, #b82b2b 40%, #b82b2b 50%, white 50%, white 60%, #b82b2b 60%, #b82b2b 70%, white 70%, white 80%, #b82b2b 80%, #b82b2b 90%, white 90%) 5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  }
+  
+  /* Hover effect */
+  .ccbb:hover {
+    transform: scale(1.1); /* Scale up the button slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Add a deeper shadow */
+    border-image-source: linear-gradient(45deg, white 10%, #b82b2b 10%, #b82b2b 20%, white 20%, white 30%, #b82b2b 30%, #b82b2b 40%, white 40%, white 50%, #b82b2b 50%, #b82b2b 60%, white 60%, white 70%, #b82b2b 70%, #b82b2b 80%, white 80%, white 90%, #b82b2b 90%);
+    color: #fff; /* Change the text color */
+  }
