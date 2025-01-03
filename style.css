@@ -1,6 +1,5 @@
 body {
-    background-color: #8e1a1a;
-
+  background-color: #b82b2b;
 }
 .ccb {
     border: 10px solid; /* Sets border thickness */
@@ -20,7 +19,7 @@ body {
     width: 100%;
     height: auto;
 }
-.container {
+.container1 {
 
     display: flex;
     height: 100vh;
@@ -47,15 +46,15 @@ body {
     width: 45%;
     margin-left: 55%;
     padding: 20px;
-    height: 100vh;
-    background-color: #ffffff;
+    height: auto;
+    background-color:white;
   }
   .left-section h1 {
     padding-top: 24%;
   }
   /* Mobile Styles */
   @media (max-width: 768px) {
-    .container {
+    .container1 {
       display: block;
       padding-top: 50vh;
     }
@@ -93,3 +92,295 @@ body {
     border-image-source: linear-gradient(45deg, white 10%, #b82b2b 10%, #b82b2b 20%, white 20%, white 30%, #b82b2b 30%, #b82b2b 40%, white 40%, white 50%, #b82b2b 50%, #b82b2b 60%, white 60%, white 70%, #b82b2b 70%, #b82b2b 80%, white 80%, white 90%, #b82b2b 90%);
     color: #fff; /* Change the text color */
   }
+  /* Style for the heading */
+.right-section.ccb h2 {
+  color: #b82b2b; /* Main website color for the heading text */
+  font-size: 28px; /* Slightly larger font for the heading */
+  margin-bottom: 15px; /* Add spacing below the heading */
+  text-align: center; /* Center the heading */
+}
+
+/* Style for the subheading */
+.right-section.ccb h4 {
+  color: #b82b2b; /* Main website color */
+  font-size: 20px; /* Subheading font size */
+  margin-bottom: 10px; /* Add spacing below the subheading */
+  text-align: center; /* Center the text */
+}
+
+/* Style for the ordered list */
+.right-section.ccb ol {
+  color: #b82b2b; /* Main website color for the text */
+  font-size: 16px; /* Font size for the list items */
+  line-height: 1.6; /* Add spacing between list items */
+  padding-left: 20px; /* Indent the list */
+}
+
+/* Style for the list items */
+.right-section.ccb ol li {
+  margin-bottom: 10px; /* Add spacing below each list item */
+}
+
+/* Style for the paragraph */
+.right-section.ccb p {
+  color: #b82b2b; /* Main website color for paragraph text */
+  font-size: 16px; /* Font size for the paragraph */
+  line-height: 1.6; /* Spacing between lines */
+  text-align: justify; /* Align text for a clean look */
+  margin-top: 15px; /* Add spacing above the paragraph */
+}
+.right-section.ccb img {
+ width: 100%;
+ height: auto;
+}
+.firstcont {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(145deg, #e94b4b, #a62121);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: slideInFromTop 1.5s ease-out;
+}
+
+/* Input Field */
+.playernumber {
+  width: 80%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* General Button Style */
+button {
+  background-color: #fff; /* White background */
+  color: #b82b2b; /* Christmas red text */
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 2px solid #b82b2b; /* Red border */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+button:hover {
+  background-color: #b82b2b; /* Red background */
+  color: #fff; /* White text */
+  transform: scale(1.1); /* Zoom effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Deeper shadow */
+}
+
+/* Active/Pressed State */
+button:active {
+  transform: scale(0.95); /* Slight shrink */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Lighter shadow */
+  background-color: #990000; /* Darker red */
+}
+
+/* Disabled State (Optional) */
+button:disabled {
+  background-color: #ddd; /* Light grey */
+  color: #aaa; /* Grey text */
+  border: 2px solid #bbb; /* Grey border */
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Submit Button */
+.playernumbersubmit {
+  background-color: #ffffff;
+  color: #b82b2b;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Animation for Button */
+.playernumbersubmit:hover {
+  background-color: #a62121;
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+@keyframes slideInFromTop {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+.maindiv {
+  background-color: #b82b2b;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;    /* Vertically center */
+  overflow: hidden;
+}
+
+/* Snowflake Styles */
+.snowflake {
+  position: absolute;
+  top: -50px; /* Start above the viewport */
+  color: #fff;
+  font-size: 10px; /* Randomized in JavaScript */
+  opacity: 0.8; /* Randomized in JavaScript */
+  pointer-events: none; /* Ensure snowflakes don't block user interactions */
+  animation: fall linear infinite;
+}
+
+/* Snowfall Animation */
+@keyframes fall {
+  0% {
+      transform: translateY(0);
+      opacity: 0.8; /* Appear faintly */
+  }
+  100% {
+      transform: translateY(100vh); /* Fall to the bottom */
+      opacity: 0; /* Fade out slightly as it reaches the bottom */
+  }
+}
+/* General styles for player input container */
+.player-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Space between name and email inputs */
+  margin-bottom: 15px; /* Spacing between player rows */
+}
+
+/* Input fields (name and email) */
+.name,
+.email {
+  width: 200px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  color: #b82b2b;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover and Focus effects */
+.name:hover,
+.email:hover,
+.name:focus,
+.email:focus {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Deeper shadow */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Placeholder styling for inputs */
+.name::placeholder,
+.email::placeholder {
+  color: #b82b2b; /* Match the red theme */
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+/* Optional: Add a glow effect to the player container */
+.player-div:hover {
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Glow animation */
+@keyframes glow {
+  from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #ffcccc, 0 0 30px #ff9999;
+  }
+  to {
+      box-shadow: 0 0 20px #ff9999, 0 0 30px #ff6666, 0 0 40px #ff3333;
+  }
+}
+.message-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  padding: 20px 30px;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  max-width: 400px; /* Limit width */
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Title Style */
+.message-title {
+  font-size: 2rem;
+  color: #b82b2b; /* Christmas red */
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+/* Message Text Style */
+.message-text {
+  font-size: 1rem;
+  color: #333; /* Dark gray text for readability */
+  line-height: 1.6; /* Better text spacing */
+}
+.go-back-button {
+  background-color: #fff;
+  color: #b82b2b;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: 2px solid #b82b2b;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+}
+
+.go-back-button:hover {
+  background-color: rgb(192, 123, 123);
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Container */
+.footer {
+  background-color: #8a1e1e; /* Darker red than the main background */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow at the top */
+  z-index: 3;
+}
+
+/* Social Icons Container */
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Spacing between icons */
+}
+
+/* Icon Links */
+.icon-link {
+  color: #fff; /* White icons */
+  font-size: 1.5rem; /* Icon size */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect on Icons */
+.icon-link:hover {
+  transform: scale(1.2); /* Slight zoom effect */
+  color: #ffcccc; /* Lighter color on hover */
+}

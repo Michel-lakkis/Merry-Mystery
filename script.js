@@ -41,7 +41,11 @@ function fillData() {
     runbutton.addEventListener('click', () => {
         const pairings = generatePairings();
         sendEmails(pairings);
-        window.location.href = 'final.html';
+        
+
+        window.open('final.html', '_blank');
+
+
     });
 }
 
@@ -87,7 +91,7 @@ function generatePairings() {
 }
 
 // Initialize EmailJS with user ID
-emailjs.init('x7I1plL0AygXMCvgr');
+emailjs.init('MCY67BxRrZSs11f7t');
 
 function sendEmails(pairings) {
     pairings.forEach((pair) => {

@@ -4,21 +4,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div id="numberinput">
-        <input type="number" min="4" id="number" required placeholder="Enter the number of players">
-        <button id="usernumber" onclick="validateNumber()">next</button>
+    <div class="maindiv">
+    <div class="firstcont ccb" id="numberinput">
+        <input class="playernumber ccb" type="number" min="4" id="number" required placeholder="Enter the number of players">
+        <button class="playernumbersubmit ccb" id="usernumber" onclick="validateNumber()">next</button>
     </div>
     <div class="container">
     <div id="allPlayers">     
     </div>
     </div>
+    </div>
+
 
 
 <div id="pairingsContainer"></div>
  
+<script>document.addEventListener("DOMContentLoaded", () => {
+    const maindiv = document.querySelector('.maindiv');
+    const snowflakeCount = 100; // Number of snowflakes
 
+    for (let i = 0; i < snowflakeCount; i++) {
+        createSnowflake();
+    }
+
+    function createSnowflake() {
+        const snowflake = document.createElement('div');
+        snowflake.classList.add('snowflake');
+        snowflake.textContent = '❄'; // Snowflake symbol
+
+        // Randomize size, position, and animation duration
+        const size = Math.random() * 10 + 10; // Snowflake size (10px to 20px)
+        const left = Math.random() * 100; // Snowflake starting horizontal position (%)
+        const duration = Math.random() * 5 + 5; // Animation duration (5s to 10s)
+        const delay = Math.random() * 5; // Random delay to stagger animations
+        const opacity = Math.random() * 0.5 + 0.5; // Opacity (0.5 to 1)
+
+        // Apply styles
+        snowflake.style.fontSize = `${size}px`;
+        snowflake.style.left = `${left}vw`;
+        snowflake.style.animationDuration = `${duration}s`;
+        snowflake.style.animationDelay = `${delay}s`;
+        snowflake.style.opacity = opacity;
+
+        // Append to the maindiv
+        maindiv.appendChild(snowflake);
+
+        // Remove snowflake after it finishes animation
+        snowflake.addEventListener('animationend', () => {
+            snowflake.remove();
+            createSnowflake(); // Create a new snowflake to replace it
+        });
+    }
+});
+</script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script src="script.js"></script>
