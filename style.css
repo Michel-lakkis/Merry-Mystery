@@ -70,6 +70,10 @@ body {
         margin-left: 0%;
         margin-right: 3%;
     }
+    footer {
+      top: 700px;
+      left: 15px;
+    }
   }
   .ccbb {
     position: relative;
