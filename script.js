@@ -19,7 +19,7 @@ function fillData() {
         const playerDiv = document.createElement('div');
         playerDiv.innerHTML = `
             <input type="text" id="name${i}" class="name" placeholder="Name" required>
-            <input type="text" id="email${i}" class="email" placeholder="Email" required>
+            <input type="email" id="email${i}" class="email" placeholder="Email" required>
         `;
         container.appendChild(playerDiv);
     }
